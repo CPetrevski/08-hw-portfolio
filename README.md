@@ -30,7 +30,7 @@ Created an about section with a picture and small about me section.
 
 Created a work section displaing apps I have created. Was instructed to have the first one bigger but I wish to choose the even tile layout for my page.
 
-Created a contact me section with text box's. Currently under development for actually sending an email to my address.
+Created a contact me section with text box's. Will need to publish page to get the formsubmit working.
 
 Created a footer for copyright logo and also a small link to my github.
 
@@ -48,19 +48,22 @@ Small style changes to layout.
 
 Added links to git hub and resume.
 
+Added link to LinkedIn
+
 Added links to sections of the page from the navbar.
+
 
 ## Links ##
 
 
 
-### GitHub ###
+### Repository ###
 
-https://github.com/CPetrevski
+https://github.com/CPetrevski/08-hw-portfolio
 
-### Web Page ###
+### Page ###
 
-https://cpetrevski.github.io/02-hw-portfolio/
+https://cpetrevski.github.io/08-hw-portfolio//
 
 <img src="./assets/images/preview.png">
 
