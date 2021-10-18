@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #0B0C10;
+    color: #66FCF1;
+    text-align: center;
+    line-height: 1.5;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-start; */
+}
+
+header {
+    font-size: 350%;
+    padding: 40px;
+    background-color: #0B0C10;
+    justify-content: flex-end;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #1F2833;
+    box-shadow: 0px 0px 25px #1F2833;
+  }
+
+nav a {
+    color: #C5C6C7;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+/* hover link style */
+nav a:hover {
+    color: #66FCF1;
+    transition: 1s;
+}
+
+a {
+    color: #66FCF1;
+    text-decoration: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-header {
+    margin-top: 50px;
+    background-color: #1F2833;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 25px #1F2833;
+}
+
+.about h2 {
+    font-size: 200%;
+    margin: 50px 0px 20px 0px;
+}
+
+.about p {
+    font-size: 200%;
+    padding: 40px 40px 40px 40px;
+    color: #C5C6C7;
+}
+
+.profile img {
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #66FCF1;
+    margin: 40px 20px 40px 20px;
+}
+
+.about-card {
+    flex: 1;
+}
+
+.profile {
+    flex: 1;
+}
+
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.work img {
+    margin: 10px
+}
+
+.work-header {
+    font-size: 200%;
+    margin-top: 50px;
+    background-color: #1F2833;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 25px #1F2833;
+
+}
+
+.card {
+    position: relative;
+    text-align: center;
+    flex: 0 0 400px;
+}
+
+
+.card img {
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.card:hover img {
+    transition: 1s;
+    opacity: 100%;
+}
+
+.card:hover h3 {
+    opacity: 0%;
+    transition: 1s;
+}
+/* Header in the centre of card */
+.card h3 {
+    font-size: 200%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#contact-me h2 {
+    font-size: 200%;
+    margin: 10% 0 5% 0;
+}
+
+.contact-header {
+    background-color: #1F2833;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 0px 25px #1F2833;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* Contact form field */
+.contact-form label {
+    min-width: 100px;
+}
+
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0B0C10;
+    color:#66FCF1
+  }
+input[type=email], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #0B0C10;
+    color:#66FCF1
+  }
+  
+  input[type=submit] {
+    background-color: #1F2833;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #66FCF1;
+    color: #0B0C10;
+  }
+
+  button {
+    background-color: #1F2833;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #66FCF1;
+    color: #0B0C10;
+  }
+
+  footer h6 {
+    margin: 20px;
+  }
+
+  footer img {
+      margin: 20px 10px 10px 10px;
+  }
+/* small device layout for about section. All other sections work as needed. */
+  @media screen and (max-width: 600px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .profile {
+        order: -1;
+    }
+  }

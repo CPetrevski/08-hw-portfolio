@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <!-- Added google font link -->
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+        <title>Chris Petrevski's Portfolio</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>CHRIS PETREVSKI</h1>
+        </header>
+        <!-- Nav bar to the right. Linked pdf file in assets. -->
+        <nav>
+            <a href="#about-me">About Me</a>
+            <a href="#my-work">Work</a>
+            <a href="#contact-me">Contact Me</a>
+            <a href="./assets/pdf/cp-resume.pdf" target="_blank">Resume</a>            
+        </nav>
+        <!-- About me section. Separated photo and text with elements for flexbox -->
+        <section id="about-me" class="about">
+            <div class="about-card">
+                <h2 class="about-header">About Me</h2>
+                <p> I am currently a Junior Developer. I have been self teaching programmning
+                    online through various videos and resources. I am currently enrolled in the 
+                    Coding Bootcamp through University of Sydney. I currently work for AJ Grant in
+                    the Development team. I hope to advance my current knowledge and learn advanced 
+                    programming.
+                </p>
+            </div>      
+            <figure class="profile">
+                <img src="./assets/images/about.jpg"/>
+            </figure>  
+        </section>       
+        
+        <!-- Work section. Have used 6 objects for grid effect. WIP -->
+        <main id="my-work">
+            <h2 class="work-header">My Work</h2>
+            <section class="work">
+                <div class="card">
+                    <a href="https://cpetrevski.github.io/28-stu-mini-project/" target="_blank">
+                    <img src="./assets/images/css-tricks.png"/> 
+                    </a>
+                    <h3>CSS Tricks App</h3>
+                    <h4><a href="https://github.com/CPetrevski/28-stu-mini-project" target="_blank">Repository</a></h4>
+                </div>
+
+                <div class="card">
+                    <a href="https://cpetrevski.github.io/03-hw-javascript-pw/" target="_blank">
+                    <img src="./assets/images/pw.png"/>
+                    </a>
+                    <h3>Password Generator</h3>
+                    <h4><a href="https://github.com/CPetrevski/03-hw-javascript-pw" target="_blank">Repository</a></h4>
+                </div>
+
+                <div class="card">
+                    <a href="https://cpetrevski.github.io/05-hw-day-planner/" target="_blank">
+                    <img src="./assets/images/day.png"/>
+                    </a>
+                    <h3>Day Planner</h3>
+                    <h4><a href="https://github.com/CPetrevski/05-hw-day-planner" target="_blank">Repository</a></h4>
+                </div>
+
+                <div class="card">
+                    <a href="#"></a>
+                    <img src="./assets/images/coming-soon.jpg"/>
+                    </a>
+                    <h3>Coming Soon</h3>
+                </div>
+
+                <div class="card">
+                    <a href="#"></a>
+                    <img src="./assets/images/coming-soon.jpg"/>
+                    </a>
+                    <h3>Coming Soon</h3>
+                </div>
+                <div class="card">
+                    <a href="#"></a>
+                    <img src="./assets/images/coming-soon.jpg"/>
+                    </a>
+                    <h3>Coming Soon</h3>
+                </div>
+            </section>
+        </main>
+        <!-- Contact form. WIP -->
+        <section id="contact-me">
+            <h2 class="contact-header">Contact Me</h2>
+            <div class="contact-form">
+                <form action="https://formsubmit.co/c_petrevski@hotmail.com" method="POST">
+
+                    <div class="form-box">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." autocomplete="off" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." autocomplete="off" required>
+                    </div>
+                    <div class="form-box">
+                        <label for="email">Email</label>
+                        <input type="email" id = "email" name="email" placeholder="Your Email.." autocomplete="off" required>    
+                    </div>
+                    <div class="form-box">
+                        <label for="subject">Subject</label>                    
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" autocomplete="off"></textarea>
+                    </div>
+                    
+                    <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </section>
+        <!-- Linked github through image icon. -->
+        <footer>
+            <a href="https://github.com/CPetrevski" target="_blank"><img src="./assets/images/github.png"/></a>
+            <h6>&copy CPetrevski 2021</h6>
+        </footer>
+
+
+    </body>
+</html>
